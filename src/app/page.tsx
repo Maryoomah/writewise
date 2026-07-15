@@ -15,8 +15,8 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col items-center gap-4 text-white mt-8">
-            <Link href=""className="inline-block bg-blue-800 py-2 px-3 rounded-lg ">Login to your dashboard</Link>
-            <Link href="" className="inline-block bg-blue-800 py-2 px-3 rounded-lg">New User? Create Account</Link>
+            <Link href="/login"className="inline-block bg-blue-800 py-2 px-3 rounded-lg">Login to your dashboard</Link>
+            <Link href="/register" className="inline-block bg-blue-800 py-2 px-3 rounded-lg">New User? Create Account</Link>
           </div>
         </div>
       </section>
