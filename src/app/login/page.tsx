@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { login } from "./action"
 export default function Login() {
     return (
         <>
@@ -8,12 +9,12 @@ export default function Login() {
             Write <span className="text-blue-900 ">Wise</span> 
           </h1>     
 {/* form           */}
-<form className="flex flex-col gap-4 mt-8 ">
+<form action={login} className="flex flex-col gap-4 mt-8 ">
     <label htmlFor="">Email Address </label>
-    <input type="email" placeholder="Enter your email address" className="block border border-blue-700 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"/>
+    <input type="email" placeholder="Enter your email address" name="email" id="email" className="block border border-blue-700 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"/>
 <label htmlFor="">Password</label>
-<input type="password" placeholder="Enter your password" className="block border border-blue-700 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"/>
-<button className="bg-blue-800 py-2 px-3 rounded-lg text-white" type="submit">Login to dashboard</button>
+<input type="password" name="password" id="password" placeholder="Enter your password" className="block border border-blue-700 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"/>
+<button className="bg-blue-800 py-2 px-3 rounded-lg text-white cursor-pointer" type="submit">Login to dashboard</button>
 <div className="flex items-center gap-4">
 
     <Link href="" className=" underline ">forgot password</Link>

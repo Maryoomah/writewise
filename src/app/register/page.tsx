@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import { signup } from "./action";
 export default function Register() {
   return (
     <section className="min-h-screen flex items-center justify-center ">
@@ -13,19 +13,21 @@ export default function Register() {
         </p>
 
         {/* Form */}
-        <form className="mt-8 space-y-5">
+        <form action={signup} className="mt-8 space-y-5">
           {/* Full Name */}
           <div>
             <label
-              htmlFor="name"
+              htmlFor="full_name"
               className="block mb-2 font-medium "
             >
               Full Name
             </label>
             <input
-              id="name"
+              id="full_name"
               type="text"
+              name="full_name"
               placeholder="Enter your full name"
+              required
               className="w-full border border-blue-700 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
             />
           </div>
@@ -41,7 +43,9 @@ export default function Register() {
             <input
               id="email"
               type="email"
+              name="email"
               placeholder="Enter your email address"
+              required
               className="w-full border border-blue-700 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
             />
           </div>
@@ -59,6 +63,7 @@ export default function Register() {
                   id="teacher"
                   name="role"
                   value="teacher"
+                  required
                   className="accent-blue-900"
                 />
                 Teacher
@@ -88,7 +93,9 @@ export default function Register() {
             <input
               id="password"
               type="password"
+              name="password"
               placeholder="Enter your password"
+              required
               className="w-full border border-blue-700 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
             />
           </div>
@@ -104,7 +111,9 @@ export default function Register() {
             <input
               id="confirmPassword"
               type="password"
+              name="confirm_password"
               placeholder="Confirm your password"
+              required
               className="w-full border border-blue-700 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
             />
           </div>
@@ -112,7 +121,7 @@ export default function Register() {
           {/* Submit */}
           <button
             type="submit"
-            className="w-full bg-blue-900 hover:bg-blue-800 transition text-white py-3 rounded-lg font-semibold"
+            className="w-full cursor-pointer bg-blue-900 hover:bg-blue-800 transition text-white py-3 rounded-lg font-semibold"
           >
             Create Account
           </button>
