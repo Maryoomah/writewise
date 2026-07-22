@@ -17,7 +17,7 @@ export default function Login() {
 <button className="bg-blue-800 py-2 px-3 rounded-lg text-white cursor-pointer" type="submit">Login to dashboard</button>
 <div className="flex items-center gap-4">
 
-    <Link href="" className=" underline ">forgot password</Link>
+    <Link href="/forgot-password" className=" underline ">forgot password</Link>
     <Link href="/register"className=" underline ">new user? create account</Link>
 </div>
 </form>
