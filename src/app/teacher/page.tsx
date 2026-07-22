@@ -3,17 +3,7 @@ import NavLink from "@/components/navlink";
 export default function TeacherDashboard() {
   return (
     <main>
-      {/* Header */}
-      <section className="flex items-center justify-between p-8">
-        <h1 className="text-3xl md:text-4xl font-extrabold">
-          Write <span className="text-blue-900">Wise</span>
-        </h1>
-
-        <div className="flex gap-4">
-          <NavLink href="/teacher/profile">Profile</NavLink>
-          <NavLink href="/login">Log Out</NavLink>
-        </div>
-      </section>
+    
 
       {/* Dashboard */}
       <section className="bg-blue-100 min-h-screen p-8">

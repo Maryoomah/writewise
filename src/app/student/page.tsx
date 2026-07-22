@@ -3,17 +3,7 @@ import NavLink from "@/components/navlink";
 export default function StudentDashboard() {
   return (
     <main>
-      {/* Header */}
-      <section className="flex items-center justify-between p-8">
-        <h1 className="text-3xl md:text-4xl font-extrabold">
-          Write <span className="text-blue-900">Wise</span>
-        </h1>
-
-        <div className="flex gap-4">
-          <NavLink href="/student/profile">Profile</NavLink>
-          <NavLink href="/login">Log Out</NavLink>
-        </div>
-      </section>
+   
       {/* Dashboard */}
 <section className="min-h-screen bg-blue-100 p-8">        <h2 className="text-3xl font-bold">Welcome Back, Muhammad 👋</h2>
         {/* Dashboard Cards */}
